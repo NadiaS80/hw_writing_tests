@@ -14,6 +14,9 @@ def solve(phrases: list):
 class TestSolve(unittest.TestCase):
 
     def test_solve_func(self):
+        """
+        Verify that the function correctly returns all palindromic phrases from the input list.
+        """
         params = (
             (['шалаш', 'а роза упала на лапу азора', 'пальма'], ['шалаш', 'а роза упала на лапу азора']),
             (['солнце', 'альфа-центавра'], []),

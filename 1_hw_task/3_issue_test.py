@@ -16,8 +16,10 @@ def vote(votes):
 
 class TestVote(unittest.TestCase):
 
-
     def test_vote_max_quantity(self):
+        """
+        Verify correct value selection and proper exception handling for empty input.
+        """
         params = (([0, 0, 0, 5, 6, 9], 0),
                   ([-5, 9897, 0, -5, 98], -5),
                   ([], ValueError)

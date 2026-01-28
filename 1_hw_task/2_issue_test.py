@@ -16,6 +16,9 @@ def check_triangle(side1: int, side2: int, side3: int):
 class TestCheck_triangle(unittest.TestCase):
 
     def test_with_params(self):
+        """
+        Verify that the triangle type is correctly determined for different combinations of sides.
+        """
         params = (
             (30, 30, 30, "Равносторонний треугольник"),
             (130, 10, 80, "Треугольник не существует"),
